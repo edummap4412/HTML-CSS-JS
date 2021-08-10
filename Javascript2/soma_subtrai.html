@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>SOMA E SUBTRAÇÃO</title>
+
+	
+</head>
+<body>
+
+
+<script type="text/javascript">
+		
+		function operadores(tipo){
+			
+			if( tipo == 'soma'){
+				let n1 = Number(window.prompt('Digite o primeiro numero'))
+
+				let n2 = Number(window.prompt('Digite outro numero:'))
+
+					 var resultado = n1 + n2
+
+						return('O resultado é : ' +resultado)
+
+			}if (tipo == 'subtração') {
+				let n1 = Number(window.prompt('Digite o primeiro numero'))
+
+				let n2 = Number(window.prompt('Digite outro numero:'))
+
+				 	 var resultado = n1 - n2
+
+						return('O resultado é : ' +resultado)
+
+			}	
+
+				
+
+
+		}
+
+		var escolha = prompt('Digite o nome do operador para efetuar os calculos : (Ex: soma, subtração...)')
+
+				document.write(operadores(escolha))
+	</script>
+</body>
+</html>

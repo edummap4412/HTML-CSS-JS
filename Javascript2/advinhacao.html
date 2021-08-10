@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Advinhacao</title>
+</head>
+<body onload="sortear()">
+	<h1>Adivinhe o Numero</h1>
+
+	<button onclick="advinha()" >Clique e advinhe</button>
+	<section id="botao">
+		
+	</section>
+	<script>
+		let res = document.querySelector('section#botao')
+		let computador =  0
+		let jogador = 0
+		
+
+		function sortear(){
+			let min = 1
+			let max = 100
+			let dif = max - min
+			let aleatorio = Math.random()
+			computador = min + Math.trunc(dif * aleatorio) // Para criar numeros aleatorios
+		}
+
+		function advinha(){
+			jogador = Number(window.prompt('Qual é o seu palpite?'))
+
+			if( jogador < computador) {
+				res.innerHTML += "<p> Você valor digitou"+ jogador+ ".Porém o número é maior</p>"
+
+			}if (jogador > computador){
+				res.innerHTML += "<p> Você valor digitou"+ jogador+ ".Porém o número é menor</p>"
+
+			} else if (jogador == computador) {
+				res.innerHTML += "<p><strong>PARABÉNS!</strong> VOCÊ ACERTOU</p>"
+				document.getElementById("botao").style.visibility = 'hidden'
+	
+			}
+
+
+		}
+
+
+	</script>
+
+</body>
+</html>

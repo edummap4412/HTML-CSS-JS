@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Funcoes Anonimas</title>
+	<script type="text/javascript">
+
+		function arredonda(num){
+			
+			document.write(Math.round(num))
+			document.write('<hr />')
+		}
+
+		arredonda(4.56)
+
+		function  arredondaUP(num2){
+			
+			document.write(Math.ceil(num2))
+			document.write('<hr />')
+
+		}
+		arredondaUP(5.76)
+
+		function arredondaDown(num3){
+			
+			document.write(Math.floor(num3))
+			document.write('<hr />')
+		}
+
+		arredondaDown(5.76)
+
+
+		function truncado (num4){
+			
+			document.write(Math.trunc(num4))
+			document.write('<hr />')
+		}
+
+		truncado(6.79)
+
+		function tiponum(num5){
+			document.write(Math.sign(num5))
+
+		}
+
+		tiponum(4) // returns -1
+		tiponum(0)// returns 0
+		tiponum(-4)// returns 1
+		document.write('<hr />')
+
+		function raiz (num6 ,elevado){
+
+			document.write(Math.pow(num6, elevado))
+			document.write('<hr />')
+
+		}
+
+		raiz (8, 2)
+
+
+		function MinMax(args) {
+			document.write('menor numero é'+Math.min(args))
+			document.write('maior numero é'+Math.max(args))
+
+		}
+			var numeros = [5, 6, 60, 400, 63, 60, 2]
+				numeros  = parseInt(numeros)
+				
+			MinMax(numeros)
+	</script>
+</head>
+<body>
+
+
+
+</body>
+</html>

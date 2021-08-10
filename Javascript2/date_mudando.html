@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Mudando DATAS</title>
+	<script type="text/javascript">
+		
+		/*
+		var data = new Date()
+
+		// adcionar / remover dias
+		document.write(data.toString())
+		data.setDate(data.getDate() + 720)
+		document.write('hr />')
+		document.write(data.toString())
+		document.write('<br /><br /><hr />')
+
+		//adicionar / remover mes
+		document.write(data.toString())
+		data.setMonth(data.getMonth() + 1)
+		document.write('<hr / >')
+		document.write(data.toString())
+
+		//adicionar / remover anos
+		document.write(data.toString())
+		data.setFullYear(data.getMonth() + 1)
+		document.write('<hr />')
+		document.write(data.toString())
+		*/
+
+		//Calculando datas
+		// 15/01/2017
+		var data1 = new Date(2017, 0, 15)
+
+		var data2 = new Date(2017, 1, 23)
+
+
+		document.write(data1.toString())
+		document.write('hr />')
+		document.write(data2.toString())
+
+
+		document.write('<br /><hr />')
+
+		//converter datas para daldo que possamos calcular
+		document.write(data1.getTime())
+		document.write('<hr />')
+		document.write(data2.getTime())
+
+		//encontrar a quantidade de milissegundos entre data1 e data2
+		// Math para retornar um valor absouto ja que essa conta de milisecundos esta om resultado negativo
+		var milissegundos_datas = Math.abs(data1.getTime() - data2.getTime())
+		document.write(milissegundos_datas) 
+
+
+		// 1 dia tem 24, cada hora tem 60 minuots,
+		// cada minuto tem 60 segundos e 
+		// cada segundo tem 1000 milisegundos
+		// então quantos milissegundos existem em um dia?
+
+		
+		var milissegundos_por_dia = (1*24*60*60*1000)
+		document.write('1 dia tem :' + milissegundos_por_dia + 'milisegundos')
+
+		document.write('<br /><hr />')
+		document.write("diferença de dias é :" +Math.ceil(milissegundos_datas / milissegundos_por_dia ))
+
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

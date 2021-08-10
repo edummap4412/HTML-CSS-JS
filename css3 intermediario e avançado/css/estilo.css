@@ -1,0 +1,62 @@
+/***** Seletor universal ****
+
+*{
+
+	border: 1px solid red;
+
+}
+
+/***** Seletor de texto **
+ 
+ h1 {
+ 	color : green
+ }
+
+ /***** Seletor de Classe ****
+ 
+ .verde {
+
+ 	color: green;
+ }
+
+ p.verde {
+ 	color: green;
+
+
+ }
+
+*/
+
+/****** Seletor de filho (herda diretamente o seletor , se não estiver direto ele nao herda) ***
+
+li> a {
+	color : blue;
+	text-decoration: none;
+
+}**/
+
+/***** Seletor de Descendente ( nao precisa ser direto como seletor filho , ou seja, pode haver outros elementos)
+  
+ p a {
+  	color: green;
+  }
+
+  /****** Irmão adjacente ( é o paragrafo que vem logo a abaixo e h1 , se colocar algum elemento no meio ele nao funcionará 
+    	 ex: 
+    		<h1>Título da página</h1>
+    		<p>Parágrafo 1 da página</p>
+
+   h1+p {
+
+   	color: red;
+
+   }
+   ***/
+
+
+/*** Seletor de irmão geral ( aqui nao precisa ser presendentes , se ele for irmao de h1 ele altera todos)
+ 	 ex: 
+    		<h1>Título da página</h1>
+    		<p>Parágrafo 1 da página</p>
+    		<p>Parágrafo 2 da página</p>
+***/ 

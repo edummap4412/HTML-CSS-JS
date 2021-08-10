@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>EVENTOS TECLADO</title>
+	<script type="text/javascript">
+		function acao1(argument) {
+			alert('Evento disparado')
+		}
+
+	</script>
+</head>
+<body>
+	<p>Quando o botao abaixa a messangem aparece</p>
+	<input onkeydown="acao1()" type="text" />
+	<br>
+
+	<p>Quando o botao é solto a messagem aparece</p>
+	<input onkeyup="acao1()" type="text" />
+	<br>
+
+	<p>Quando o botao é mantido pressionado a messagem aparece</p>
+	<input onkeypress="acao1()" type="text" />
+	<br>
+</body>
+</html>

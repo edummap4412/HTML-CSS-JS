@@ -1,0 +1,74 @@
+#principal{
+	background: #FFD700;
+	text-align:center;
+	padding: 10px;
+}
+
+#rodape {
+	text-align: center;
+	background: ;
+	clear: both;
+}
+
+a {
+	padding: 8px 12px;
+	text-decoration: none;
+	font-size: 20px;
+	color: white;
+	
+
+}
+a:link{
+	color : orange;
+}
+
+a:visited {
+	color: red;
+}
+
+a:hover {
+	color: yellow;
+	background: white;
+}
+
+body {
+
+	background-color: #FFFAFA;
+	
+
+}
+
+.menu {
+
+	background: #FFD700;
+	text-align: center;
+	padding: 8px 12px; 
+}
+
+.conteudo{
+	border: 1px solid red;
+	width: 950;
+	background: white;
+	float: left;
+	margin: 0 auto;
+}
+
+.posts {
+
+	float: right;
+	border: 1px solid red;
+	width: 250px;
+	background: white;
+	margin: 5px 5px;
+	
+
+}
+
+
+}
+h4 {
+	background: #778899;
+	padding: 8px 8px;
+	margin: 5px 5px;
+	font-size: 20px;
+}

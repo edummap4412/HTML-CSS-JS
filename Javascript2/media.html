@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Média do Aluno</title>
+
+</head>
+<body>
+	<h1> Média do aluno</h1>
+	<button onclick="media()">Saber media</button>
+	<section id="situacao" >
+		
+	</section>
+
+	<script type="text/javascript">
+		
+		function media() {
+
+			let nome = window.prompt('Digite nome:')
+
+			let n1 = Number(window.prompt('Nota 1 :'))
+
+			let n2  = Number(window.prompt('Nota 2 :'))
+
+				med = (n1 + n2) / 2
+
+			let res = document.getElementById('situacao')
+
+				res.innerHTML = '<p>Calculando a média final de '+ nome + '</p>'
+
+				res.innerHTML += '<p>As notas obtidas foram '+ n1 + ' e '+ n2 
+
+				res.innerHTML += '<p> A média final será '+ med + '.' 
+		}
+
+	</script>
+
+</body>
+</html>

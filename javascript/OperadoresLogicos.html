@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Operadores Logicos</title>
+	<script type="text/javascript">
+		
+
+		// Operador E (AND)
+		if(2 == 2 && 3 >= 1){
+			document.write('Verdadeira')
+		}
+		// Operador OU (OR)
+		if(2==2 || 3>=1)
+			document.write('Verdadeiro')
+		//Operador Negação
+		if(!(4 > 2))
+		{
+			document.write('Verdadeiro')
+		}
+		else {
+			document.write('Falso')
+
+		}
+
+		//Operador Ternario
+
+		var nota = 7
+		var media = 7
+		var faltas_maximas = 12
+		var faltas = 10
+
+		var resultado = (nota >= media && faltas <= faltas_maximas) ? 'Aprovado' : 'Reprovado'
+
+		document.write(resultado)
+
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

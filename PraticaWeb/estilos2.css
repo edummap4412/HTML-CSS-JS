@@ -1,0 +1,54 @@
+
+body {
+	background:#cc0202;
+	
+}	
+
+h1 {
+	padding: 5px;
+	border: 1px solid red;
+	margin: 10px 10px;
+
+}
+
+a {
+	padding: 10px;
+	border: 1px solid red;
+}
+
+.logo {
+
+	position: center;
+	top: 20 px;
+	left: 50px;
+	margin: 15px auto;
+}
+
+.menu {
+	background: #fff001;
+	font-size: 32px;
+	padding: 20px 10px;
+
+}
+
+#principal {
+
+	font: 16px "Arial",sans-serif ;
+	border: 5px solid #14994c;
+	background: #fff001 ;
+
+	
+	
+}
+.galeria {
+	
+
+	margin: 15px 20px;
+	padding: 1px 2px;
+	float: left;
+
+}
+
+.clear {
+	clear: both;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>DOM</title>
+	<style type="text/css">
+		button { font-size: 2em; padding: 30px; }
+	</style>
+</head>
+<body>
+	<h1>Interagindo com DOM</h1>
+	<button onclick="janela()">Clique aqui arrombado</button>
+	<section id="resultado">
+	<p>Aqui voce vai colocar o txto JS</p>
+	</section>
+	<script type="text/javascript">
+		
+		function janela (){
+			 let nome = window.prompt('Digite seu nome:')
+
+			 let res = window.document.getElementById('resultado')
+
+			 res.innerHTML = '<p>Olá, '+ nome + ' É um grande prazer te conhecer!"'
+			}
+
+	</script>
+
+</body>
+</html>

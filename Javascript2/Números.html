@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Números</title>
+	<style type="text/css">
+		button { font-size: 2em; padding: 30px; }
+	</style>
+</head>
+<body>
+	<h1>Trabalhando com Números</h1>
+	<button onclick="calcula()">Clique aqui</button>
+	<section id="calcula">
+	
+
+	</section>
+
+	<script type="text/javascript">
+		
+		function calcula() {
+			let numero = window.prompt('Digite Número:')
+
+			numero = parseInt(numero)
+
+			var  dobro = numero * 2
+			var metade = numero / 2
+
+			let res = window.document.getElementById('calcula')
+
+			res.innerHTML = '<p>O dobro de , '+ numero +'é ' + dobro + 'e a metade é '+ metade +' !'
+
+
+		}
+
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!doctype html>
+
+<html>
+	
+	<head>
+		<title>Meu site</title>
+		<meta charset="utf-8">
+	</head>
+
+	<body>
+
+		Esse é um texto <strong>NEGRITO</strong> <br>
+		Esse é um texto <em>itálico</em> <br>
+		Esse é um testo <u>underline</u> <br>
+		Esse é um texto <strike>errado</strike><br>
+
+		<hr>
+
+		<h1>Listas ordenadas e <strong>não </strong>ordenadas</h1>
+			<h4>Lista não ordenada</h4>
+			<!-- TIpo é circle , mas também poder ser square -->
+		<ul type="circle">
+
+			<li>Notebook</li>
+			<li>Roteador</li>
+			<li>Mouse</li>
+
+		</ul>
+		<h3>Lista ordenada</h3>
+			<h2>Perguntas</h2>
+			<!-- Mudando no type para numero a lista passa a ordenar por numero
+			usando um "I" pode ser uitlizar algarismos romanos -->
+		<ol type="A">
+			<li>Comida favorita?</li>
+			<li>Carro favorito?<li>
+
+		</ol>
+
+		<h1>Fazendo Links</h1>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis augue vitae ligula luctus sollicitudin quis vel metus. Ut tristique hendrerit hendrerit. Integer non elementum elit. Sed ornare posuere tellus, quis dapibus mi. Cras faucibus condimentum laoreet. Pellentesque lectus lorem, blandit sit amet nisi vel, auctor porta sapien. Sed accumsan, nunc viverra varius consectetur, lectus risus volutpat dui, at efficitur est sapien id justo. In ultrices nunc dui, quis luctus urna faucibus egestas. Nunc tempor suscipit sollicitudin. 
+		</p>
+		<a href="index.html">Clique aqui</a><br>
+		<a href="http://www.google.com">Google</a>
+		<a href="imagens/exemplo.html">Exemplo</a> <!-- Aqui usei / imagens para acessar a pasta imagem para chegar no exemplo.html -->
+
+		<h1>Criando tabelas</h1>
+			<table border="1" width="100%" > <!--porcentagem indica que ira acompanhar o tamanho da tela -->
+
+				<tr> <!--table row -->
+					<th> Código </th>
+					<th> Produto </th>
+					<th> Preço </th>
+					<th> Quantidade </td> <!-- table data -->
+				</tr>
+				<tr>
+					<td> 001 </td>
+					<td> <img src="imagens/nitro5.png" width="30%"><a href="">Cliquei para comprar</a> </td>
+					<td> R$ 5.000,00 </td>
+					<td> 10 </td>
+				</tr>
+				<tr>
+					<td rowspan="2">Desconto</td>
+					<td colspan="3">cupom1 -R$10</td> <!-- colspan  faz com que uma coluna ocupe o numero de espaços desejaddos -->	
+				</tr>
+				<tr>
+					<td colspan="3">cupom1 -R$10</td>	
+				</tr>
+				<tr>
+					<td>Total:</td>
+					<td colspan="3">R$ 5.000,00</td>
+				</tr>
+
+			</table>
+
+
+			<h1>Criando Formularios</h1>
+
+			<h2>Login</h2>
+			<form>
+				
+				Login:<br>
+				<input type="text" name="login"><br>
+
+				Senha:<br>
+				<input type="password" name="senha"><br>
+
+				<input type="submit" value="Logar"> <!--Submit serve para enviar os dados para o banco -->
+
+			<h2>Cadastre-se</h2>
+
+				Login:<br>
+				<input type="text" name><br><br>
+
+				sexo: <br>
+				<input type="radio" name="sexo" value="M">Masculino<br> <!-- radio é para criar aquele circulo de marcação -->
+				<input type="radio" name="sexo" value="F">Feminino<br><br>
+
+				Interesses<br>
+
+				<input type="checkbox" name=""> Futebol<br>
+				<input type="checkbox" name=""> Cursos <br>
+				<input type="checkbox" name=""> VideoGames<br>
+
+				Estado<br><br>
+
+				<select name="estado">
+					<option value="Sp">SP</option>
+					<option value="Mg">MG</option> 
+					<option value="Rj">RJ</option><!-- mostra as opções  -->
+				</select><br><br>
+
+				Observações: <br>
+				<textarea></textarea>
+				<input type="submit" value="Cadastrar">
+
+			</form>
+
+			<h1>Caracteres Especias</h1>
+
+			Home&nbsp; Quem somos&nbsp; Contato&nbsp; Reclamações&nbsp; Comentários&nbsp;
+
+
+
+		<h1>Colocando Imagens</h1>
+			<img src="imagens/corollapreto.jpg" width="700" height="430">
+
+
+	</body>
+
+</html>

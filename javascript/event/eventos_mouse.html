@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>EVENTOS MOUSE</title>
+	<script type="text/javascript">
+		
+		function acao(){
+
+			alert('Elemento foi clicado')
+		}
+
+		function acao2(){
+
+			alert('O cursor do mouse deixou a regiao do elemento')
+		}
+
+	</script>
+</head>
+<body>
+	<div  style="background: #ccc; height: 150px; width: 150px;">
+		
+		<button onclick="acao()" >clique</button>
+
+	</div>
+
+	<div style="background: blue; height: 150px; width: 150px;">
+			
+		<button ondblclick="acao()" >clique duas vezes</button>
+
+	</div>
+
+		<div style="background: yellow; height: 150px; width: 150px;">
+			
+		<button onmouseup="acao()" >clique e depois solte</button>
+
+	</div>
+
+		<div style="background: red; height: 150px; width: 150px;">
+			
+		<button onmouseover="acao()" >passe o mouse por cima</button>
+
+	</div>
+
+	<div style="background: orange; height: 150px; width: 150px;">
+			
+		<button onmouseout="acao()" >Entre e dpois sai com mouse</button>
+
+	</div>
+
+	 <div ondblclick="acao()" onmouseout="acao2()"  style="background: blue; height: 150px; width: 150px;">
+		
+
+	</div>
+
+
+
+</body>
+</html>

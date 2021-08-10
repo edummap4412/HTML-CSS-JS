@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Desafio 3</title>
+
+	<script type="text/javascript">
+		
+
+		// Aplicaçao que pedi entrada do nome do usuário
+			var nome = prompt ('Digite seu nome :')
+				
+
+		// agora solicita a alrura do mesmo
+			var altura = prompt("Digite sua altura:")
+
+			var  centimentros = altura * 100
+	
+
+		//informando o pesso
+			var peso = prompt('Digite seu peso:')
+
+			peso = parseFloat(peso)
+			altura = parseFloat(altura)
+
+
+			document.write('Eu sou '+nome+'tenho '+centimentros+'cm de altura e peso'+peso+'Kg')
+
+		// Convertendo para metros
+			var metros = centimentros / 100
+
+			document.write('Convertendo'+centimentros+'cm para metros é igual a:'+metros+'m')
+
+		// Calculo do IMC
+			var massa = (peso / (metros * metros))
+
+			massa = parseFloat(massa)
+
+			document.write ('Meu Indice de massa corporal é:'+massa)
+
+
+
+		//  Determinando o nivel de massa corporea
+
+			if (massa < 16)
+				clasificacao ='Baixo peso muito grave'
+			else if ( massa == 16 && massa <= 16,99)
+				clasificacao ='Baixo peso grave'
+			else if ( massa == 17 && massa <= 18,49)
+				clasificacao ='Baixo peso'
+			else if ( massa == 18,50 && massa <= 24,99)
+				clasificacao ='Peso normal'
+			else if ( massa == 25 &&massa <= 29,99)
+				clasificacao ='Sobrepeso'
+			else if ( massa == 30 && massa <= 34,99)
+				clasificacao ='Obesidade grau |'
+			else if ( massa == 35 && massa <= 39,99)
+				clasificacao ='Obesidade grau ||'
+			else
+				clasificacao ='Obesidade grau |||'
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

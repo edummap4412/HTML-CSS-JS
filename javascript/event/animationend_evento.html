@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Animção</title>
+</head>
+<style type="text/css">
+
+	#myDIV {
+		margin: 25px;
+		width: 550px;
+		height: 100px;
+		background: orange;
+		position: relative;
+		font-size: 20px;
+	}
+
+@keyframes mymove {
+
+	from { top: 0px; left: 0px; }
+	to {top:  600px; left: 300px; }
+
+}
+
+</style>
+
+<body>
+
+	<div id= 'myDIV' onclick="myfunction()">Click para começar a animação</div>
+
+<script type="text/javascript">
+	
+	var x = document.getElementById("myDIV");
+
+	 	function myfunction(){
+
+	 		x.style.WebkitAnimation = "mymove 4s 2";
+
+	 		x.style.animation = "mymove 4s 2";
+	 	}
+
+		x.addEventListener("webkitAnimationStart", myStartFunction);
+		x.addEventListener("webkitAnimationIteration", myRepeatFunction);
+		x.addEventListener("webkitAnimationEnd", myEndFunction);
+
+
+	function myStartFunction() {
+		this.innerHTML= " AnimationEvent está acontecendo ";
+
+		this.style.background = 'blue';
+	}
+
+	 function myRepeatFunction() {
+	 	this.innerHTML = "AnimationEvent está acontecendo ";
+
+	 	this.style.background = 'lightblue';
+
+
+	 }
+
+	 function myEndFunction() {
+
+	 	this.innerHTML = "AnimationEvent está acontecendo ";
+
+	 	this.style.background = 'lightgray';
+
+	 }
+
+</script>
+
+</body>
+</html>
